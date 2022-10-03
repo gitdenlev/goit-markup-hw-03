@@ -1,0 +1,350 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-white-color);
+  background-color: var(--main-white-color);
+}
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --acent-color: #2196f3;
+  --main-white-color: #ffffff;
+  --hero-color: #2f303a;
+  --section-comand: #f5f4fa;
+  --border-color: #eeeeee;
+  --posluga-button: #188ce8;
+  --box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  --address-color: rgba(255, 255, 255, 0.6);
+}
+.navigation {
+  list-style-type: none;
+}
+.web-studio {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--acent-color);
+  text-decoration: none;
+}
+
+.main-studio {
+  color: var(--title-text-color);
+}
+
+.studio {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+
+.studio:focus {
+  color: var(--acent-color);
+}
+
+.studio:hover {
+  color: var(--acent-color);
+}
+
+.portfolio {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+
+.portfolio:focus {
+  color: var(--acent-color);
+}
+
+.portfolio:hover {
+  color: var(--acent-color);
+}
+
+.contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+
+.contacts:focus {
+  color: var(--acent-color);
+}
+
+.contacts:hover {
+  color: var(--acent-color);
+}
+
+.mailto {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.mailto:focus {
+  color: var(--acent-color);
+}
+
+.mailto:hover {
+  color: var(--acent-color);
+}
+
+.tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.tel:focus {
+  color: var(--acent-color);
+}
+
+.tel:hover {
+  color: var(--acent-color);
+}
+
+.title-content {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-white-color);
+}
+
+.button-posluga {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--main-white-color);
+  background-color: var(--acent-color);
+  border-color: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: var(--box-shadow);
+}
+.button-posluga:hover {
+  background-color: var(--posluga-button);
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.background {
+  background-color: var(--hero-color);
+}
+
+.background-team {
+  background-color: var(--section-comand);
+}
+
+.caption {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.article {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.article-name {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style-type: none;
+}
+
+.headlines {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.command-block {
+  background-color: var(--main-white-color);
+  box-shadow: var(--box-shadow);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+
+.location {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-white-color);
+  text-decoration: none;
+}
+
+.address-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--address-color);
+  text-decoration: none;
+}
+
+.address-link:focus {
+  color: var(--acent-color);
+}
+
+.address-link:hover {
+  color: var(--acent-color);
+}
+
+.location:focus {
+  color: var(--acent-color);
+}
+
+.location:hover {
+  color: var(--acent-color);
+}
+
+.footer-studio {
+  color: var(--main-white-color);
+}
+
+.button-list {
+  text-align: center;
+  list-style-type: none;
+}
+
+.buttons {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background-color: var(--section-comand);
+  border-radius: 4px;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.buttons:hover {
+  background-color: var(--acent-color);
+  color: var(--main-white-color);
+}
+
+.buttons:focus {
+  background-color: var(--acent-color);
+  color: var(--main-white-color);
+}
+
+.list-panel {
+  list-style-type: none;
+}
+
+.panel {
+  text-decoration: none;
+}
+
+.title-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.card-name {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.box-card-1 {
+  background-color: var(--main-white-color);
+}
+
+.box-card-2 {
+  background-color: var(--main-white-color);
+}
+
+.box-card-3 {
+  background-color: var(--main-white-color);
+}
+
+.box-card-4 {
+  background-color: var(--main-white-color);
+}
+
+.box-card-5 {
+  background-color: var(--main-white-color);
+}
+
+.box-card-6 {
+  background-color: var(--main-white-color);
+}
+
+.box-card-7 {
+  background-color: var(--main-white-color);
+}
+
+.box-card-8 {
+  background-color: var(--main-white-color);
+}
+
+.box-card-9 {
+  background-color: var(--main-white-color);
+}
+.current {
+  color: var(--acent-color);
+}
