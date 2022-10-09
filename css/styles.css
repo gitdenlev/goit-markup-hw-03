@@ -16,8 +16,9 @@ body {
     1px 4px 6px rgba(0, 0, 0, 0.16);
   --address-color: rgba(255, 255, 255, 0.6);
 }
-.navigation {
+.position-navigation {
   list-style-type: none;
+  display: block;
 }
 .web-studio {
   font-family: "Raleway", sans-serif;
@@ -41,6 +42,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   text-decoration: none;
+  list-style-type: none;
 }
 
 .studio:focus {
@@ -58,12 +60,12 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   text-decoration: none;
+  list-style-type: none;
 }
 
 .portfolio:focus {
   color: var(--acent-color);
 }
-
 .portfolio:hover {
   color: var(--acent-color);
 }
@@ -75,6 +77,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   text-decoration: none;
+  list-style-type: none;
 }
 
 .contacts:focus {
@@ -92,6 +95,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   text-decoration: none;
+  list-style-type: none;
 }
 
 .mailto:focus {
@@ -109,6 +113,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   text-decoration: none;
+  list-style-type: none;
 }
 
 .tel:focus {
@@ -123,10 +128,14 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-white-color);
+  padding-top: 200px;
+  text-align: center;
+}
+.wrap {
+  word-wrap: break-word;
 }
 
 .button-posluga {
@@ -142,6 +151,10 @@ body {
   cursor: pointer;
   border-radius: 4px;
   box-shadow: var(--box-shadow);
+  width: 216px;
+  height: 50px;
+  margin-top: 40px;
+  margin-left: 692px;
 }
 .button-posluga:hover {
   background-color: var(--posluga-button);
@@ -161,10 +174,20 @@ body {
 
 .background {
   background-color: var(--hero-color);
+  width: 1600px;
+  height: 600px;
+}
+.background-footer {
+  background-color: var(--hero-color);
+  width: 1600px;
+  height: 252px;
 }
 
 .background-team {
+  width: 1600px;
+  height: 648px;
   background-color: var(--section-comand);
+  margin-top: 94px;
 }
 
 .caption {
@@ -195,13 +218,29 @@ body {
   list-style-type: none;
 }
 
-.headlines {
+.headline-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-top: 132px;
+  margin-left: 617px;
+}
+.headline-team {
+  display: block;
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  width: 264px;
+  height: 42px;
+  margin-left: 668px;
+  white-space: nowrap;
+  padding-top: 94px;
 }
 
 .name {
@@ -347,4 +386,308 @@ body {
 }
 .current {
   color: var(--acent-color);
+}
+/*FLEXBOX*/
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+* {
+  box-sizing: border-box;
+}
+/*Контейнер*/
+.container {
+  width: 1600px;
+  align-items: center;
+  background-color: var(--main-white-color);
+}
+/* Навігація хедера */
+.position-navigation {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: center;
+}
+/* Навігація хедера */
+.site-nav {
+  display: flex;
+}
+/* Значок */
+.web-nav {
+  display: flex;
+  margin-left: 215px;
+  align-items: center;
+}
+/* Студія */
+.studio-nav {
+  display: flex;
+  margin-left: 93px;
+  align-items: center;
+}
+/* Портфоліо */
+.portfolio-nav {
+  display: flex;
+  margin-left: 50px;
+  align-items: center;
+}
+/* Контакти */
+.contacts-nav {
+  display: flex;
+  margin-left: 50px;
+  align-items: center;
+}
+/* Пошта */
+.mailto-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 344px;
+}
+/* Телефон */
+.tel-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+/* Наші особливості */
+.features-list {
+  display: flex;
+  margin-left: 215px;
+  margin-top: 93px;
+}
+/* Заголовки */
+.caption1-position {
+  width: 270px;
+  height: 16px;
+}
+.caption2-position {
+  width: 270px;
+  height: 16px;
+}
+.caption3-position {
+  width: 270px;
+  height: 16px;
+}
+.caption4-position {
+  width: 270px;
+  height: 16px;
+}
+.li1-position {
+  display: block;
+}
+.li2-position {
+  display: block;
+  margin-left: 30px;
+}
+.li3-position {
+  display: block;
+  margin-left: 30px;
+}
+.li4-position {
+  display: block;
+  margin-left: 30px;
+}
+/* Параграфи */
+.article1-position {
+  width: 270px;
+  height: 72px;
+  padding-top: 10px;
+}
+.article2-position {
+  width: 270px;
+  height: 48px;
+  padding-top: 10px;
+}
+.article3-position {
+  width: 270px;
+  height: 48px;
+  padding-top: 10px;
+}
+.article4-position {
+  width: 270px;
+  height: 72px;
+  padding-top: 10px;
+}
+/* Скіли */
+.work-list{
+  display: flex;
+  margin-left: 215px;
+  margin-top: 50px;
+}
+.position-mobile{
+  margin-left: 30px;
+}
+.position-styles{
+  margin-left: 30px;
+}
+/* Наша команда */
+.position-team{
+  display: flex;
+  margin-left: 215px;
+  margin-right: 215px;
+  margin-top: 92px;
+}
+.position-woman{
+  margin-left: 30px;
+  width: 270px;
+  height: 368px;
+}
+.position-man1{
+  width: 270px;
+  height: 368px;
+}
+.position-man2{
+  margin-left: 30px;
+  width: 270px;
+  height: 368px;
+}
+.position-man3{
+  margin-left: 30px;
+  width: 270px;
+  height: 368px;
+}
+.position-name1{
+  padding-top: 30px;
+}
+.position-name2{
+  padding-top: 30px;
+}
+.position-name3{
+padding-top: 30px;
+}
+.position-name4{
+padding-top: 30px;
+}
+.position-article1{
+  padding-top: 10px;
+}
+.position-article2{
+padding-top: 10px;
+}
+.position-article3{
+padding-top: 10px;
+}
+.position-article4{
+padding-top: 10px;
+}
+/* Футер */
+.position-list{
+  margin-left: 215px;
+  padding-top: 60px;
+}
+.position-footer2{
+ padding-top: 20px;
+}
+.position-footer3{
+  padding-top: 9px;
+}
+.position-footer4{
+  padding-top: 9px;
+}
+/* Сторінка портфоліо */
+.button-list{
+  display: flex;
+  margin-left: 537px;
+  margin-top: 100px;
+}
+.position-button1{
+  
+}
+.position-button2{
+  margin-left: 8px;
+}
+.position-button3{
+margin-left: 8px;
+}
+.position-button4{
+margin-left: 8px;
+}
+.position-button5{
+margin-left: 8px;
+}
+.position-panel1{
+  display: flex;
+ width: calc((100%-60px)/3);
+ margin-right: 30px;
+ margin-left: 215px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+position-box1{
+
+}
+position-box2{
+  
+}
+position-box3{
+
+}
+position-box4{
+
+}
+position-box5{
+
+}
+position-box6{
+
+}
+position-box7{
+
+}
+position-box8{
+
+}
+position-box9{
+
 }

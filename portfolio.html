@@ -10,57 +10,64 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css” integrity=“sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==” crossorigin=“anonymous” referrerpolicy=“no-referrer” />">
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Портфоліо</title>
   </head>
-  <body>
+  <body class="content">
     <header>
       <!--Навігація-->
-      <nav>
+      <div class="container">
+      <nav class="position-navigation">
+        <ul class="site-nav">
+          <li class="web-nav">
         <a href="./index.html" class="web-studio"
           >Web<span class="main-studio">Studio</span></a
         >
-        <ul class="navigation">
-          <li class="studio">
-            <a href="./index.html" class="studio">Студія</a>
+        </li>
+          <li class="studio studio-nav">
+            <a href="./index.html" class="studio current">Студія</a>
           </li>
-          <li class="portfolio">
-            <a href="#" class="portfolio current">Портфоліо</a>
+          <li class="portfolio portfolio-nav">
+            <a href="./portfolio.html" class="portfolio">Портфоліо</a>
           </li>
-          <li class="contacts"><a href="#" class="contacts">Контакти</a></li>
+          <li class="contacts contacts-nav"><a href="#" class="contacts">Контакти</a></li>
         </ul>
-      </nav>
-      <ul class="navigation">
+      <ul class="mailto-nav">
         <li class="mailto">
           <a href="mailto:info@devstudio.com" class="mailto"
             >info@devstudio.com</a
           >
         </li>
+        </ul>
+      <ul class="tel-nav">
         <li class="tel">
           <a href="tel:+380961111111" class="tel">+38 096 111 11 11</a>
         </li>
       </ul>
+      </nav>
+      </div>
     </header>
     <main>
       <section>
         <h1 class="invisible visually-hidden">Секція з кнопками</h1>
         <!--Кнопки-->
         <ul class="button-list">
-          <li><button type="button" class="buttons">Усі</button></li>
-          <li><button type="button" class="buttons">Веб-сайти</button></li>
-          <li><button type="button" class="buttons">Додатки</button></li>
-          <li><button type="button" class="buttons">Дизайн</button></li>
-          <li><button type="button" class="buttons">Маркетинг</button></li>
+          <li><button type="button" class="buttons position-button1">Усі</button></li>
+          <li><button type="button" class="buttons position-button2">Веб-сайти</button></li>
+          <li><button type="button" class="buttons position-button3">Додатки</button></li>
+          <li><button type="button" class="buttons position-button4">Дизайн</button></li>
+          <li><button type="button" class="buttons position-button5">Маркетинг</button></li>
         </ul>
-        <ul class="list-panel">
-          <li class="box-card-1">
+        <ul class="list-panel position-panel1">
+          <li class="box-card-1 position-box1">
             <a class="panel" href="#"
               ><img src="./images/krak.jpg" alt="Технокряк" width="370" />
               <h3 class="title-name">Технокряк</h3>
               <p class="card-name">Веб-сайт</p>
             </a>
           </li>
-          <li class="box-card-2">
+          <li class="box-card-2 position-box2">
             <a class="panel" href="#"
               ><img
                 src="./images/bassketboll.jpg"
@@ -71,7 +78,7 @@
               <p class="card-name">Дизайн</p>
             </a>
           </li>
-          <li class="box-card-3">
+          <li class="box-card-3 position-box3">
             <a class="panel" href="#"
               ><img
                 src="./images/seafood.jpg"
@@ -82,7 +89,7 @@
               <p class="card-name">Додаток</p>
             </a>
           </li>
-          <li class="box-card-4">
+          <li class="box-card-4 position-box4">
             <a class="panel" href="#"
               ><img
                 src="./images/headphones.jpg"
@@ -93,14 +100,14 @@
               <p class="card-name">Маркетинг</p>
             </a>
           </li>
-          <li class="box-card-5">
+          <li class="box-card-5 position-box5">
             <a class="panel" href="#"
               ><img src="./images/boxes.jpg" alt="Проект Boxes" width="370" />
               <h3 class="title-name">Проект Boxes</h3>
               <p class="card-name">Додаток</p>
             </a>
           </li>
-          <li class="box-card-6">
+          <li class="box-card-6 position-box6">
             <a class="panel" href="#"
               ><img
                 src="./images/borders.jpg"
@@ -111,7 +118,7 @@
               <p class="card-name">Веб-сайт</p>
             </a>
           </li>
-          <li class="box-card-7">
+          <li class="box-card-7 position-box7">
             <a class="panel" href="#"
               ><img
                 src="./images/book.jpg"
@@ -122,14 +129,14 @@
               <p class="card-name">Дизайн</p>
             </a>
           </li>
-          <li class="box-card-8">
+          <li class="box-card-8 position-box8">
             <a class="panel" href="#"
               ><img src="./images/lab.jpg" alt="Проект LAB" width="370" />
               <h3 class="title-name">Проект LAB</h3>
               <p class="card-name">Маркетинг</p>
             </a>
           </li>
-          <li class="box-card-9">
+          <li class="box-card-9 position-box9">
             <a class="panel" href="#"
               ><img
                 src="./images/business.jpg"
@@ -143,13 +150,15 @@
         </ul>
       </section>
     </main>
-    <footer class="background">
-      <a class="web-studio" href="./portfolio.html"
+   <footer class="background-footer">
+      <ul class="list position-list">
+      <li class="position-footer1">
+        <a class="web-studio" href="./index.html"
         >Web<span class="footer-studio">Studio</span></a
       >
+      </li>
       <address>
-        <ul class="list">
-          <li>
+          <li class="position-footer2">
             <a
               href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
               class="location"
@@ -158,12 +167,12 @@
               >м. Київ, пр-т Лесі Українки, 26
             </a>
           </li>
-          <li>
+          <li class="position-footer3">
             <a href="mailto:info@devstudio.com" class="address-link"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="position-footer4">
             <a href="tel:+380961111111" class="address-link"
               >+38 096 111 11 11</a
             >
