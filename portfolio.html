@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css” integrity=“sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==” crossorigin=“anonymous” referrerpolicy=“no-referrer” />">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/1.1.0/normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Портфоліо</title>
   </head>
@@ -26,10 +26,10 @@
         >
         </li>
           <li class="studio studio-nav">
-            <a href="./index.html" class="studio current">Студія</a>
+            <a href="./index.html" class="studio">Студія</a>
           </li>
           <li class="portfolio portfolio-nav">
-            <a href="./portfolio.html" class="portfolio">Портфоліо</a>
+            <a href="./portfolio.html" class="portfolio current">Портфоліо</a>
           </li>
           <li class="contacts contacts-nav"><a href="#" class="contacts">Контакти</a></li>
         </ul>
@@ -59,15 +59,16 @@
           <li><button type="button" class="buttons position-button4">Дизайн</button></li>
           <li><button type="button" class="buttons position-button5">Маркетинг</button></li>
         </ul>
-        <ul class="list-panel position-panel1">
-          <li class="box-card-1 position-box1">
+          <div class="position-panel1">
+        <ul class="list-panel">
+          <li class="box-card-1">
             <a class="panel" href="#"
               ><img src="./images/krak.jpg" alt="Технокряк" width="370" />
               <h3 class="title-name">Технокряк</h3>
               <p class="card-name">Веб-сайт</p>
             </a>
           </li>
-          <li class="box-card-2 position-box2">
+          <li class="box-card-2">
             <a class="panel" href="#"
               ><img
                 src="./images/bassketboll.jpg"
@@ -78,7 +79,7 @@
               <p class="card-name">Дизайн</p>
             </a>
           </li>
-          <li class="box-card-3 position-box3">
+          <li class="box-card-3">
             <a class="panel" href="#"
               ><img
                 src="./images/seafood.jpg"
@@ -89,7 +90,11 @@
               <p class="card-name">Додаток</p>
             </a>
           </li>
-          <li class="box-card-4 position-box4">
+          </ul>
+          </div>
+          <div class="position-panel2">
+            <ul class="list-panel">
+          <li class="box-card-4">
             <a class="panel" href="#"
               ><img
                 src="./images/headphones.jpg"
@@ -100,14 +105,14 @@
               <p class="card-name">Маркетинг</p>
             </a>
           </li>
-          <li class="box-card-5 position-box5">
+          <li class="box-card-5">
             <a class="panel" href="#"
               ><img src="./images/boxes.jpg" alt="Проект Boxes" width="370" />
               <h3 class="title-name">Проект Boxes</h3>
               <p class="card-name">Додаток</p>
             </a>
           </li>
-          <li class="box-card-6 position-box6">
+          <li class="box-card-6">
             <a class="panel" href="#"
               ><img
                 src="./images/borders.jpg"
@@ -118,7 +123,11 @@
               <p class="card-name">Веб-сайт</p>
             </a>
           </li>
-          <li class="box-card-7 position-box7">
+          </ul>
+          </div>
+          <div class="position-panel3">
+            <ul class="list-panel">
+          <li class="box-card-7">
             <a class="panel" href="#"
               ><img
                 src="./images/book.jpg"
@@ -129,14 +138,14 @@
               <p class="card-name">Дизайн</p>
             </a>
           </li>
-          <li class="box-card-8 position-box8">
+          <li class="box-card-8">
             <a class="panel" href="#"
               ><img src="./images/lab.jpg" alt="Проект LAB" width="370" />
               <h3 class="title-name">Проект LAB</h3>
               <p class="card-name">Маркетинг</p>
             </a>
           </li>
-          <li class="box-card-9 position-box9">
+          <li class="box-card-9">
             <a class="panel" href="#"
               ><img
                 src="./images/business.jpg"
@@ -148,16 +157,19 @@
             </a>
           </li>
         </ul>
+        </div>
       </section>
     </main>
-   <footer class="background-footer">
+    <footer class="background-footer">
       <ul class="list position-list">
       <li class="position-footer1">
         <a class="web-studio" href="./index.html"
         >Web<span class="footer-studio">Studio</span></a
       >
       </li>
+      </ul>
       <address>
+        <ul class="list position-list2">
           <li class="position-footer2">
             <a
               href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
